@@ -2,16 +2,18 @@
 
 print()
 num = int(input("Enter the elements you want to input: "))
-i = 0
-list = []
+li = []
 
-while i<num:
-    try:
-        a=int(input())
-        list.append(a)
-    except ValueError:
-        pass
-    i+=1
+for i in range(0,num):
+    a=input()
+    li.append(a)
+
+updated_list = []
+
+for item in li:
+    if item.isdigit():
+        updated_list.append(item)
+
 print()
-print(list)
+print(updated_list)
 print()

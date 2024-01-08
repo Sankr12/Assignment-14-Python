@@ -2,19 +2,13 @@
 
 print()
 num = int(input("Enter how many elements you want: "))
-i = 0
-list = []
-b=0
+L = []
 
-while i<num:
+for i in range(num):
     a = int(input())
-    list.append(a)
-    b=b+a
-    i+=1
+    L.append(a)
 
 print()
-print("List:",list)
-print("Sum of elements:",b)
+print("List:",L)
+print("Sum of elements:",sum(L))
 print()
-
-    

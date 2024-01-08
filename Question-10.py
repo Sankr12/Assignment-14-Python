@@ -11,7 +11,9 @@ for i in range(num):
 print("\nOriginal List:")
 print(num_list)
 
-sorted_list = sorted(num_list)
+for i in range(len(num_list)):
+    for j in range(0, len(num_list)-i-1):
+        if num_list[j]>num_list[j+1]:
+            num_list[j], num_list[j+1] = num_list[j+1], num_list[j]
 
-print("\nSorted List:")
-print(sorted_list)
+print(num_list)
